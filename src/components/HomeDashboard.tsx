@@ -76,11 +76,11 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({
           </div>
 
           <h1 className="font-display text-3xl sm:text-4xl font-bold leading-tight">
-            Cook Delicious Meals with What You Already Own.
+            Cook Authentic Kerala Naadan Ruchi with What You Already Own.
           </h1>
 
           <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-            Welcome, <strong className="text-white font-bold">{currentUser.name}</strong>. Your pantry has <strong className="text-white">{pantryItems.length} ingredients</strong>. We've scored all recipes using pantry coverage, user ratings, and verified influencer endorsements.
+            Namaskaram, <strong className="text-white font-bold">{currentUser.name}</strong>! Your pantry currently has <strong className="text-white">{pantryItems.length} ingredients</strong> (Coconut Oil, Curry Leaves, Shallots, Mustard Seeds, Kudampuli). We've scored traditional Kerala recipes using pantry coverage, user ratings, and master chef endorsements.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">

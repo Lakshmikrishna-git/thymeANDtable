@@ -23,7 +23,7 @@ import {
   DEFAULT_WEIGHTS
 } from './initialData';
 
-const STORAGE_KEY = 'smart_kitchen_college_db_v1';
+const STORAGE_KEY = 'smart_kitchen_kerala_v2';
 
 export interface DatabaseState {
   users: User[];
@@ -59,7 +59,7 @@ class StorageEngine {
       reviews: INITIAL_REVIEWS,
       mealPlans: INITIAL_MEAL_PLANS,
       weights: DEFAULT_WEIGHTS,
-      currentUserId: 'user_alex', // Default logged-in student user
+      currentUserId: 'user_lakshmi', // Default logged-in Malayali home cook / student
     };
   }
 
@@ -79,7 +79,7 @@ class StorageEngine {
       reviews: INITIAL_REVIEWS,
       mealPlans: INITIAL_MEAL_PLANS,
       weights: DEFAULT_WEIGHTS,
-      currentUserId: 'user_alex',
+      currentUserId: 'user_lakshmi',
     };
     this.saveState();
   }

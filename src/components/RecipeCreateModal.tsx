@@ -21,14 +21,14 @@ const AVAILABLE_CATEGORIES: RecipeCategory[] = [
 ];
 
 const PRESET_IMAGES = [
-  { label: 'Pasta', url: 'https://images.unsplash.com/photo-1621996346565-e3d5d6281728?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Chicken', url: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Shakshuka', url: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Fried Rice', url: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Curry/Stew', url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Salmon', url: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Salad Bowl', url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80' },
-  { label: 'Tacos', url: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Fish Curry', url: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Kadala Curry', url: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Mutta Roast', url: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Avial / Sadya', url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Kozhi Roast', url: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Moru Curry', url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Malabar Biryani', url: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80' },
+  { label: 'Dosa / Appam', url: 'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80' },
 ];
 
 export const RecipeCreateModal: React.FC<RecipeCreateModalProps> = ({
@@ -50,14 +50,15 @@ export const RecipeCreateModal: React.FC<RecipeCreateModalProps> = ({
 
   // Ingredients builder
   const [ingredients, setIngredients] = useState<RecipeIngredient[]>([
-    { ingredientId: 'ing_1', ingredientName: 'Garlic', quantity: 2, unit: 'cloves' },
-    { ingredientId: 'ing_2', ingredientName: 'Olive Oil', quantity: 2, unit: 'tbsp' },
+    { ingredientId: 'ing_1', ingredientName: 'Coconut Oil (Velichenna)', quantity: 2, unit: 'tbsp' },
+    { ingredientId: 'ing_2', ingredientName: 'Shallots (Kunjulli)', quantity: 10, unit: 'pcs' },
+    { ingredientId: 'ing_3', ingredientName: 'Curry Leaves (Kariveppila)', quantity: 2, unit: 'sprigs' },
   ]);
 
   // Instructions builder
   const [instructions, setInstructions] = useState<string[]>([
-    'Heat oil in a pan over medium heat and sauté aromatics.',
-    'Add main ingredients and simmer until cooked through.',
+    'Heat pure coconut oil in a pan or clay pot and splutter mustard seeds and curry leaves.',
+    'Add sliced shallots, ginger, garlic, and sauté until fragrant and golden brown.',
   ]);
 
   const [influencerScore, setInfluencerScore] = useState(4.8);

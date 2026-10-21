@@ -104,10 +104,10 @@ export const RecipeCatalog: React.FC<RecipeCatalogProps> = ({
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#2D2A26]">
-            Recipe Collection & Kitchen Discovery
+            Kerala Recipe Catalog & Kitchen Discovery
           </h2>
           <p className="text-xs sm:text-sm text-[#7A7469] mt-1">
-            Search by dish or pantry ingredient (e.g. "pasta", "garlic", "spinach") with deterministic pantry matching.
+            Search by Kerala delicacies or pantry staples (e.g. "meen", "kadala", "mutta", "coconut oil", "shallots").
           </p>
         </div>
 
@@ -139,7 +139,7 @@ export const RecipeCatalog: React.FC<RecipeCatalogProps> = ({
             <Search className="w-4 h-4 text-[#7A7469] absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search recipes by title or ingredient (e.g. tomatoes, chicken, pasta)..."
+              placeholder="Search recipes by title or ingredient (e.g. Meen Curry, Kadala, Mutta, Coconut Oil)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-[#FAF7F2] border border-[#E8DFD1] text-xs focus:ring-2 focus:ring-[#3D6B50] focus:outline-hidden"

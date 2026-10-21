@@ -199,7 +199,7 @@ export const PantryManager: React.FC<PantryManagerProps> = ({
           <Search className="w-4 h-4 text-[#7A7469] absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search your pantry items (e.g. olive oil, pasta, garlic)..."
+            placeholder="Search your pantry items (e.g. Coconut Oil, Curry Leaves, Shallots, Kadala)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-[#FAF7F2] border border-[#E8DFD1] text-xs focus:ring-2 focus:ring-[#3D6B50] focus:outline-hidden"
