@@ -1,0 +1,6 @@
+{
+  "name": "Smart Recipe Book & Kitchen Pantry Planning System",
+  "description": "A college-level Java OOP kitchen planning system featuring influencer-based recipe discovery, deterministic 3-signal pantry recommendation engine, and interactive project review hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
